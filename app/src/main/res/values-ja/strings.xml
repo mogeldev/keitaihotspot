@@ -5,6 +5,7 @@
     <string name="language_system">システムの言語</string>
 
     <string name="settings_about">アプリについて</string>
+    <string name="about_version">バージョン %1$s</string>
     <string name="about_credit">mogeldev 制作</string>
 
     <string name="settings_licenses">ライセンス</string>

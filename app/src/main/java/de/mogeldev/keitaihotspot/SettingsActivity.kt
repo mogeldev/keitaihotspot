@@ -53,6 +53,8 @@ class SettingsActivity : ComponentActivity() {
 
     private fun showAboutDialog() {
         val dialogBinding = DialogAboutBinding.inflate(layoutInflater)
+        val versionName = packageManager.getPackageInfo(packageName, 0).versionName
+        dialogBinding.textVersion.text = getString(R.string.about_version, versionName)
         dialogBinding.btnWebsiteGithub.setOnClickListener { openUrl("https://mogeldev.github.io") }
         dialogBinding.btnWebsiteDe.setOnClickListener { openUrl("https://mogeldev.de") }
 
