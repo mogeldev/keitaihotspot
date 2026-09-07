@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/settings_licenses"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/licenses_app_notice"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnViewGpl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/button_text_color"
+            android:focusable="true"
+            android:nextFocusDown="@id/btnViewApache"
+            android:nextFocusUp="@id/btnViewFullList"
+            android:text="@string/licenses_view_gpl" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#CCCCCC" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/licenses_third_party_header"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textThirdPartyList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnViewApache"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/button_text_color"
+            android:focusable="true"
+            android:nextFocusDown="@id/btnViewFullList"
+            android:nextFocusUp="@id/btnViewGpl"
+            android:text="@string/licenses_view_apache" />
+
+        <Button
+            android:id="@+id/btnViewFullList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/button_text_color"
+            android:focusable="true"
+            android:nextFocusDown="@id/btnViewGpl"
+            android:nextFocusUp="@id/btnViewApache"
+            android:text="@string/licenses_view_full_list" />
+
+    </LinearLayout>
+</ScrollView>

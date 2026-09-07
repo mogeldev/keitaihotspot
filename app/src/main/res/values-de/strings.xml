@@ -1,0 +1,41 @@
+<resources>
+    <string name="menu_settings">Einstellungen</string>
+    <string name="settings_language">Sprache</string>
+    <string name="dialog_choose_language">Sprache wählen</string>
+    <string name="language_system">Systemsprache</string>
+
+    <string name="settings_about">Über die App</string>
+    <string name="about_version">Version %1$s</string>
+    <string name="about_credit">Entwickelt von mogeldev</string>
+
+    <string name="settings_licenses">Lizenzen</string>
+    <string name="licenses_app_notice">Copyright (C) 2026 mogeldev.\n\nDieses Programm ist freie Software: Sie können es unter den Bedingungen der GNU General Public License Version 3 (oder, nach Ihrer Wahl, einer späteren Version) weitergeben und/oder modifizieren.\n\nEs wird OHNE JEDE GEWÄHRLEISTUNG verbreitet; sogar ohne die implizite Gewährleistung der MARKTFÄHIGKEIT oder EIGNUNG FÜR EINEN BESTIMMTEN ZWECK.</string>
+    <string name="licenses_view_gpl">Vollständige GPLv3-Lizenz ansehen</string>
+    <string name="licenses_third_party_header">Verwendete Bibliotheken</string>
+    <string name="licenses_view_apache">Apache-Lizenz 2.0 ansehen</string>
+    <string name="licenses_view_full_list">Vollständige Liste auf GitHub</string>
+
+    <string name="placeholder_dash">–</string>
+    <string name="label_ssid">Netzwerkname (SSID)</string>
+    <string name="label_password">Passwort</string>
+    <string name="qr_code_description">QR-Code zum Verbinden mit dem Hotspot</string>
+
+    <!-- Bereich: ohne Root -->
+    <string name="section_no_root">Ohne Root</string>
+    <string name="section_no_root_desc">Öffnet die echten Wi-Fi-Hotspot-Einstellungen des Geräts — manche Hersteller verstecken diesen Bildschirm komplett aus dem normalen Einstellungsmenü (wie bei diesem Kyocera-Gerät), daher ist dieser Shortcut oft der einzige Weg dorthin. Erfordert einen manuellen Tap zum An-/Ausschalten — Android erlaubt Apps das nicht automatisch ohne Root.</string>
+    <string name="btn_open_system_hotspot">Wi-Fi-Hotspot-Einstellungen öffnen</string>
+    <string name="system_hotspot_not_found">Die Wi-Fi-Hotspot-Einstellungen konnten auf diesem Gerät nicht gefunden werden.</string>
+
+    <!-- Bereich: Root -->
+    <string name="section_root">Root (experimentell)</string>
+    <string name="section_root_desc">Startet den echten Wi-Fi-Hotspot (mit Internet-Freigabe) direkt über Root, ohne manuellen Tap. EXPERIMENTELL: erfordert ein gerootetes Gerät und wurde auf echter Hardware nicht getestet, da das Gerät des Entwicklers nicht gerootet ist.</string>
+    <string name="root_not_detected">Kein Root-Zugriff verfügbar (su nicht gefunden oder Zugriff verweigert).</string>
+    <string name="root_status_idle">Hotspot ist aus</string>
+    <string name="root_status_starting">Hotspot wird gestartet…</string>
+    <string name="root_status_running">Hotspot läuft</string>
+    <string name="root_status_stopping">Hotspot wird beendet…</string>
+    <string name="root_status_error">Fehlgeschlagen: %1$s</string>
+    <string name="btn_root_generate_password">Neues Passwort generieren</string>
+    <string name="btn_root_start">Hotspot starten (root)</string>
+    <string name="btn_root_stop">Hotspot beenden (root)</string>
+</resources>

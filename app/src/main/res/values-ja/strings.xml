@@ -1,0 +1,41 @@
+<resources>
+    <string name="menu_settings">設定</string>
+    <string name="settings_language">言語</string>
+    <string name="dialog_choose_language">言語を選択</string>
+    <string name="language_system">システムの言語</string>
+
+    <string name="settings_about">アプリについて</string>
+    <string name="about_version">バージョン %1$s</string>
+    <string name="about_credit">mogeldev 制作</string>
+
+    <string name="settings_licenses">ライセンス</string>
+    <string name="licenses_app_notice">Copyright (C) 2026 mogeldev.\n\n本プログラムはフリーソフトウェアです。GNU General Public License バージョン3(またはそれ以降のバージョン)の条件の下で再頒布および/または改変することができます。\n\n本プログラムは有用であることを願って頒布されますが、一切の保証はありません。商品性や特定目的への適合性についての黙示的保証もありません。</string>
+    <string name="licenses_view_gpl">GPLv3ライセンス全文を見る</string>
+    <string name="licenses_third_party_header">サードパーティ製ライブラリ</string>
+    <string name="licenses_view_apache">Apache License 2.0を見る</string>
+    <string name="licenses_view_full_list">GitHubで全リストを見る</string>
+
+    <string name="placeholder_dash">–</string>
+    <string name="label_ssid">ネットワーク名 (SSID)</string>
+    <string name="label_password">パスワード</string>
+    <string name="qr_code_description">ホットスポットに接続するためのQRコード</string>
+
+    <!-- セクション: root不要 -->
+    <string name="section_no_root">root不要</string>
+    <string name="section_no_root_desc">端末の実際のWi-Fiホットスポット設定を開きます — 一部のメーカーはこの画面を通常の設定メニューから完全に隠しています(このKyocera端末のように)。そのため、このショートカットが唯一の到達方法になることがあります。オン/オフには1回手動でタップする必要があります — Androidはrootなしでアプリが自動的にこれを行うことを許可していません。</string>
+    <string name="btn_open_system_hotspot">Wi-Fiホットスポット設定を開く</string>
+    <string name="system_hotspot_not_found">この端末ではWi-Fiホットスポットの設定が見つかりませんでした。</string>
+
+    <!-- セクション: root -->
+    <string name="section_root">root(実験的)</string>
+    <string name="section_root_desc">手動タップなしで、rootを使って実際のWi-Fiホットスポット(インターネット共有あり)を直接開始します。実験的機能: root化された端末が必要で、開発者自身の端末がroot化されていないため実機での動作確認はできていません。</string>
+    <string name="root_not_detected">root権限が利用できません(suが見つからないか、アクセスが拒否されました)。</string>
+    <string name="root_status_idle">ホットスポットはオフです</string>
+    <string name="root_status_starting">ホットスポットを起動しています…</string>
+    <string name="root_status_running">ホットスポットは動作中です</string>
+    <string name="root_status_stopping">ホットスポットを停止しています…</string>
+    <string name="root_status_error">失敗しました: %1$s</string>
+    <string name="btn_root_generate_password">新しいパスワードを生成</string>
+    <string name="btn_root_start">ホットスポットを開始(root)</string>
+    <string name="btn_root_stop">ホットスポットを停止(root)</string>
+</resources>

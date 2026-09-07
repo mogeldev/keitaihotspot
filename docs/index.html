@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>KeitaiHotspot</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f1115;
+  color: #e8e8e8;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+}
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 2.5rem;
+  line-height: 1.6;
+}
+h1 {
+  font-size: 1.6rem;
+  margin: 0 0 0.4rem 0;
+}
+.prompt {
+  color: #6ee7b7;
+}
+.tagline {
+  color: #9aa0a6;
+  margin: 0 0 2rem 0;
+  font-size: 0.95rem;
+}
+h2 {
+  font-size: 1.05rem;
+  font-weight: normal;
+  margin: 2.5rem 0 1rem 0;
+  color: #e8e8e8;
+}
+p {
+  margin: 0 0 1.1rem 0;
+}
+ul {
+  padding-left: 1.2rem;
+  margin: 0 0 1.1rem 0;
+}
+li {
+  margin-bottom: 0.5rem;
+}
+a {
+  color: #6ee7b7;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: underline;
+}
+.btn {
+  display: block;
+  border: 1px solid #6ee7b7;
+  color: #6ee7b7;
+  padding: 0.6rem 0.8rem;
+  margin: 0 0 0.8rem 0;
+  text-decoration: none;
+}
+.btn:hover, .btn:focus {
+  background-color: #6ee7b7;
+  color: #0f1115;
+  text-decoration: none;
+}
+.box {
+  border: 1px solid #2a2e35;
+  padding: 0.8rem 1rem;
+  margin: 0 0 1.5rem 0;
+  color: #9aa0a6;
+}
+.muted {
+  color: #9aa0a6;
+  font-size: 0.85rem;
+}
+.screenshots {
+  text-align: center;
+  margin: 0 0 1.5rem 0;
+}
+.shot {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  margin: 0 1%;
+}
+.shot img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  border: 1px solid #2a2e35;
+}
+.shot p {
+  font-size: 0.75rem;
+  color: #9aa0a6;
+  margin: 0.3rem 0 0 0;
+}
+footer {
+  margin-top: 2.5rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid #2a2e35;
+  color: #9aa0a6;
+  font-size: 0.8rem;
+  overflow: hidden;
+}
+footer .left {
+  float: left;
+}
+footer .right {
+  float: right;
+}
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #fafafa;
+    color: #1a1a1a;
+  }
+  .prompt, a, .btn {
+    color: #0f9d58;
+  }
+  .btn {
+    border-color: #0f9d58;
+  }
+  .btn:hover, .btn:focus {
+    background-color: #0f9d58;
+    color: #fafafa;
+  }
+  h2 {
+    color: #1a1a1a;
+  }
+  .tagline, .box, .muted, .shot p, footer {
+    color: #5f6368;
+  }
+  .box, .shot img, footer {
+    border-color: #e2e2e2;
+  }
+}
+</style>
+</head>
+<body>
+<main>
+
+<h1><span class="prompt">$</span> keitaihotspot</h1>
+<p class="tagline">Wi-Fi hotspot control for flip phones &mdash; fully D-Pad navigable</p>
+
+<p>KeitaiHotspot is a free, open-source Android app that helps you control
+your phone's real Wi-Fi hotspot (the one that shares your mobile Internet)
+without ever touching a touchscreen. Built specifically for Android-powered
+flip phones (feature phones) with physical keys and a D-Pad.</p>
+
+<div class="box">
+Built and tested on the
+<a href="https://www.y2kphones.com/products/kyocera-digno-keitai-3-902kc-903kc">Kyocera Digno Keitai 3 (902KC / 903KC)</a>.
+</div>
+
+<div class="screenshots">
+<span class="shot">
+<img src="screenshots/main-top.png" width="180" alt="Main screen with both sections">
+<p>Main screen</p>
+</span><span class="shot">
+<img src="screenshots/root-section.png" width="180" alt="Root section">
+<p>Root section</p>
+</span><span class="shot">
+<img src="screenshots/settings.png" width="180" alt="Settings screen">
+<p>Settings</p>
+</span>
+</div>
+
+<h2><span class="prompt">$</span> why two sections?</h2>
+<p>Since Android 8, apps can only create a "local-only" hotspot that does
+<strong>not</strong> share Internet &mdash; an intentional platform
+restriction, not a bug. Actually toggling the real, Internet-sharing hotspot
+requires signature-level permissions reserved for the system, so the app is
+split into two clearly separated sections:</p>
+<ul>
+<li><strong>Without root</strong> &mdash; opens the device's real hotspot
+settings directly, so you only need to tap the on/off switch yourself.</li>
+<li><strong>Root (experimental)</strong> &mdash; starts/stops the real
+hotspot directly via root, no manual tap needed. Untested on real hardware,
+since the developer's own device is not rooted.</li>
+</ul>
+<p>Some vendors also remove the hotspot screen from their Settings app's
+visible menu entirely &mdash; Kyocera does this on the developer's own test
+device. The activity still technically exists on the system, just without a
+reachable menu entry, so the "Without root" section launches it directly by
+component name instead.</p>
+
+<h2><span class="prompt">$</span> features</h2>
+<ul>
+<li>Without root: one-tap shortcut to the device's real hotspot settings</li>
+<li>Root (experimental): direct start/stop, custom password generation, QR code for quick connecting</li>
+<li>Fully navigable with a D-Pad &mdash; no touchscreen required</li>
+<li>Available in English, Deutsch and 日本語 (Japanese)</li>
+</ul>
+
+<h2><span class="prompt">$</span> requirements</h2>
+<p>Android 8.0 (API 26) or later.</p>
+
+<h2><span class="prompt">$</span> get it</h2>
+<a class="btn" href="https://github.com/mogeldev/keitaihotspot/releases/download/v1.0.0/KeitaiHotspot-1.0.0-debug.apk">[ Download APK (v1.0.0) ]</a>
+<p class="muted">Debug-signed for now (no release keystore yet) &mdash; installs
+fine for sideloading. See the
+<a href="https://github.com/mogeldev/keitaihotspot/releases/tag/v1.0.0">release notes</a>
+for details.</p>
+<a class="btn" href="https://github.com/mogeldev/keitaihotspot">[ View source on GitHub ]</a>
+
+<h2><span class="prompt">$</span> license</h2>
+<p>Free software, licensed under the
+<a href="https://github.com/mogeldev/keitaihotspot/blob/main/LICENSE">GNU General Public License v3</a>.
+Third-party open-source libraries used are listed in
+<a href="https://github.com/mogeldev/keitaihotspot/blob/main/THIRD_PARTY_LICENSES.md">THIRD_PARTY_LICENSES.md</a>.</p>
+
+<footer>
+<span class="left">&copy; 2026 mogeldev</span>
+<span class="right"><a href="https://mogeldev.github.io">mogeldev.github.io</a> &middot; <a href="https://mogeldev.de">mogeldev.de</a></span>
+</footer>
+
+</main>
+</body>
+</html>

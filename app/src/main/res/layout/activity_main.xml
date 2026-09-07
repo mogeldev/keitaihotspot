@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/button_text_color"
+            android:focusable="true"
+            android:nextFocusDown="@id/btnOpenSystemHotspot"
+            android:nextFocusUp="@id/btnRootStop"
+            android:text="@string/menu_settings" />
+
+        <!-- ================= Abschnitt: Ohne Root ================= -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/section_no_root"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/section_no_root_desc"
+            android:textColor="#606060"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnOpenSystemHotspot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/button_text_color"
+            android:focusable="true"
+            android:nextFocusDown="@id/btnRootGeneratePassword"
+            android:nextFocusUp="@id/btnSettings"
+            android:text="@string/btn_open_system_hotspot" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="24dp"
+            android:background="#CCCCCC" />
+
+        <!-- ================= Abschnitt: Root (experimentell) ================= -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/section_root"
+            android:textColor="#B71C1C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/section_root_desc"
+            android:textColor="#606060"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textRootStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="@string/root_status_idle"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRootGeneratePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/button_text_color"
+            android:focusable="true"
+            android:nextFocusDown="@id/btnRootStart"
+            android:nextFocusUp="@id/btnOpenSystemHotspot"
+            android:text="@string/btn_root_generate_password" />
+
+        <Button
+            android:id="@+id/btnRootStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/button_text_color"
+            android:focusable="true"
+            android:nextFocusDown="@id/btnRootStop"
+            android:nextFocusUp="@id/btnRootGeneratePassword"
+            android:text="@string/btn_root_start" />
+
+        <Button
+            android:id="@+id/btnRootStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/button_text_color"
+            android:enabled="false"
+            android:focusable="true"
+            android:nextFocusDown="@id/btnSettings"
+            android:nextFocusUp="@id/btnRootStart"
+            android:text="@string/btn_root_stop" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#CCCCCC" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_ssid"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textRootSsid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/placeholder_dash"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_password" />
+
+        <TextView
+            android:id="@+id/textRootPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/placeholder_dash"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageRootQrCode"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_button"
+            android:padding="8dp"
+            android:focusable="true"
+            android:contentDescription="@string/qr_code_description"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>

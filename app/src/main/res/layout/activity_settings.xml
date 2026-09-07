@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/menu_settings"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/button_text_color"
+            android:focusable="true"
+            android:nextFocusDown="@id/btnAbout"
+            android:nextFocusUp="@id/btnLicenses"
+            android:text="@string/settings_language" />
+
+        <Button
+            android:id="@+id/btnAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/button_text_color"
+            android:focusable="true"
+            android:nextFocusDown="@id/btnLicenses"
+            android:nextFocusUp="@id/btnLanguage"
+            android:text="@string/settings_about" />
+
+        <Button
+            android:id="@+id/btnLicenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_button"
+            android:textColor="@color/button_text_color"
+            android:focusable="true"
+            android:nextFocusDown="@id/btnLanguage"
+            android:nextFocusUp="@id/btnAbout"
+            android:text="@string/settings_licenses" />
+
+    </LinearLayout>
+</ScrollView>
