@@ -28,12 +28,6 @@ for the exact `cmd wifi start-softap`/`stop-softap` shell syntax (sourced
 from the [AOSP `WifiShellCommand.java`](https://android.googlesource.com/platform/packages/modules/Wifi/+/refs/heads/main/service/java/com/android/server/wifi/WifiShellCommand.java)),
 which explicitly requires UID 0 (root).
 
-On top of that, some vendors additionally remove the hotspot screen from
-their Settings app's visible menu entirely — Kyocera does this on the
-developer's own test device (`902KC`). The activity still technically
-exists on the system, just without a reachable menu entry, so the
-"Without root" section launches it directly by component name instead.
-
 ## Features
 
 - **Without root:** one-tap shortcut to the device's real hotspot settings
